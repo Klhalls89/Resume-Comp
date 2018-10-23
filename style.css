@@ -1,0 +1,90 @@
+body {
+  display: grid;
+  width: 100%;
+  height: 1200px;
+  grid-template-areas: 
+            "aside nav nav"
+            "aside main main"
+            "aside main main";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 4fr;
+}
+
+nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-areas: 
+            "bar"
+            "menu";
+  grid-template-rows: 1fr 5fr; 
+  grid-template-columns: 1fr;
+}
+
+.nav-sect {
+  grid-area: bar;
+  background-color: orange;
+}
+
+.menu-sect {
+  grid-area: menu;
+  background-color: darkorange;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: 
+            "chart chart"
+            "res soc"
+            "res soc";
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 4fr 1fr;
+}
+
+.chart-sect{
+  grid-area: chart;
+  background-color: lightpink;
+}
+
+.resume-sect{
+  grid-area: res;
+  background-color: palevioletred;
+}
+
+.social-sect{
+  grid-area: soc;
+  background-color: hotpink;
+}
+
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-areas: 
+            "profile"
+            "home"
+            "admin"
+            "check";
+  grid-template-rows: 1fr 2fr 2fr 4fr;
+  grid-template-columns: 1fr;
+}
+
+.profile-sect {
+  grid-area: profile;
+  background-color: lightsteelblue;
+}
+
+.home-sect {
+  grid-area: home;
+  background-color: skyblue;
+}
+
+.admin-sect {
+  grid-area: admin;
+  background-color: deepskyblue;
+}
+
+.checkbox-sect {
+  grid-area: check;
+  background-color: dodgerblue;
+}
+
