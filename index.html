@@ -4,11 +4,22 @@
   <title>Profile Site</title>
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fondamento|Open+Sans:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <nav>
-    <section class="nav-sect"></section>
-    <section class="menu-sect"></section>
+    <section class="nav-sect">
+      <i class="fas fa-bars"></i>
+      <input type="text" placeholder="Search">
+      <i class="fas fa-hat-wizard"></i>
+      <i class="fas fa-scroll"></i>
+      <i class="fas fa-th-large"></i>
+    </section>
+    <section class="menu-sect">
+      <p>Vile Sourcerer</p>
+    </section>
   </nav>
   <main>
     <section class="chart-sect"></section>
@@ -16,10 +27,53 @@
     <section class="social-sect"></section>
   </main>
   <aside>
-    <section class="profile-sect"></section>
-    <section class="home-sect"></section>
-    <section class="admin-sect"></section>
-    <section class="checkbox-sect"></section>
+    <section class="profile-sect">
+      <img src="Evil.png">
+      <p>Mr. Legendre<i class="fas fa-caret-down"></i></p>
+    </section>
+    <section class="home-sect">
+    <p class="title">Home</p>
+      <article class="grid-art">
+        <i class="fab fa-fort-awesome"></i></i>
+        <p class="menu-text">Home</p>
+        <i class="fas fa-magic"></i>
+        <p class="menu-text">Magic</p>
+        <i class="fas fa-book-dead"></i>
+        <p class="menu-text">Necro</p>
+        <i class="far fa-moon"></i>
+        <p class="menu-text">Lunar</p>
+        <i class="fas fa-mortar-pestle"></i>
+        <p class="menu-text">Potion</p>
+      </article>
+    </section>
+    <section class="admin-sect">
+      <p class="title">Admin</p>
+      <article class="grid-art">
+        <i class="fas fa-crown"></i> 
+        <p class="menu-text">Admin</p>
+        <i class="fas fa-ghost"></i>
+        <p class="menu-text">Veil</p>
+        <i class="fas fa-star-half-alt"></i>
+        <p class="menu-text">Star</p>
+        <i class="fas fa-crow"></i>
+        <p class="menu-text">Curse</p>
+        <i class="fas fa-spider"></i>
+        <p class="menu-text">Eww</p>
+      </article>
+    </section>
+    <section class="checkbox-sect">
+       <p class="title">Filters</p>
+      <article class="grid-art">
+        <input class="check" type="checkbox"> 
+        <p class="menu-text">Wiz</p>
+        <input class="check" type="checkbox">
+        <p class="menu-text">Witch</p>
+        <input class="check" type="checkbox">
+        <p class="menu-text">Devil</p>
+        <input class="check" type="checkbox"> 
+        <p class="menu-text">Demon</p>
+      </article>
+    </section>
   </aside>
 </body>
 </html>
