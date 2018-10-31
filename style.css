@@ -395,3 +395,101 @@ aside {
   height: 25px;
   width: 25px;
 }
+
+
+/*begin media queries*/
+
+
+@media only screen and (max-width: 1000px) {
+  body {
+  grid-template-areas: 
+            "nav nav"
+            "main main"
+            "main main";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .3fr 1fr 1fr;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  
+  .menu-sect {
+  grid-template-areas: 
+              "job"
+              "btn"
+              "tab";
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  padding: 10px 5px;
+}
+
+  .btn-art {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+  .open {
+  margin-left: 0;
+}
+
+  .tabs-art {
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+  .chart-sect {
+  grid-template-columns: 1fr;
+  padding: 10px 5px;
+  border-bottom: none;
+}
+
+  .magics-btn {
+    display: none;
+  }
+
+  main {
+  background-color: snow;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+            "chart"
+            "res"
+            "soc";
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+  .fa-bars,
+  .fa-hat-wizard,
+  .fa-scroll,
+  .fa-th-large {
+  margin: 0px;  
+}
+
+  .res-body {
+    margin-left: 5px;
+  }
+
+  .bar-img {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 465px){
+  .pie-art {
+    grid-auto-columns: 1fr;
+  }
+
+  .pies {
+    display: block;
+  }
+}
+
+
+
+
+
+
